@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #1f2b3e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo{
+  background-color: #374357;
+  margin: 170px 23%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todo h2{
   color: white;
+  padding-top: 20px;
+ font-size: 30px;
+ text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.theForm {
+  padding: 30px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
+.theForm input{
+  padding: 10px;
+  margin: 10px;
+  width: 260px;
+  border: none;
+ outline:none;
+}
+
+.theForm label {
+ display: block;
+ font-size: 23px;
+ color: white;
+ font-weight: 700;
+ text-align: left;
+ margin-left: 8px;
+}
+
+.theForm button{
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  margin-top: 37px;
+  color: white;
+  font-weight: 600;
+  color: white;
+  background-color:#3D5A80 ;
+  cursor: pointer;
+}
+
+.line{
+  background-color: silver;
+  height: 1px;
+  width: 600px;
+  margin: auto;
+}
+
+.tdo{
+  color: white;
+  background-color: #3D5A80;
+  letter-spacing: 1px;
+  border: none;
+  padding: 10px;
+  margin: 20px 35px;
+  
+}
+
+.todo ul {
+  list-style: none;
+  margin-top: -30px;
+}
+
+.todo ul .theList {
+  background-color: #3f4e68;
+  box-shadow: 1px 3px 9px 0px #000000;
+  margin: 20px 7%;
+  padding-bottom: 14px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.todo ul .theList li {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 20px;
+  padding-top: 5px;
+  text-transform: capitalize;
+}
+
+
+.todo ul .theList span{
+  color: silver;
+  font-size:18px;
+  margin-left: 23px;
+}
+
+.todo .delete {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  color: white;
+  background-color:#3D5A80 ;
+  cursor: pointer;
+  margin-left: 42%;
+  margin-bottom: 20px;
+}
+
+.ffbu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ffbu button{
+  margin-right: 20px;
+  margin-top: 9px;
+  font-size: 25px;
+ border: none;
+ background-color: transparent;
+ color: white;
+ font-weight: 600;
+ cursor: pointer;
+}
+
+
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+
+
+
+
+
+
+  
+
+
+@media (max-width:1200px) {
+
+  .theForm input {
+    width: 98%; 
+    margin-left: 30px;
+  }
+
+  .theForm label{
+    margin-left: 30px;
+  }
+
+  .line{
+    width: 95%;
+  }
+
+  .theForm button{
+    margin-left: 30px;
+  }
+  
+  
+}
+  
+  
+
+
+
+
+
+@media (max-width:1100px) {
+  .theForm {
+    flex-direction: column;
+  }
+
+  .theForm input {
+    width: 100%; 
+    margin-left: 0;
+  }
+
+  .theForm label{
+    margin-left: 0;
+  }
+
+
+  .line{
+    width: 95%;
+  }
+
+  .theForm button{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+}
+
+
+
+@media (max-width: 600px) {
+
+  .theForm input {
+    margin-left: 0;
+  }
+
+  .theForm label{
+    margin-left: 0;
+  }
+  
+  .theForm button{
+    margin-left: 0;
+  }
+  
+}
+
+
+@media (max-width: 500px) {
+
+
+  .todo{
+    width: 300px;
+    margin-left: 60px;
+  }
+
+
 }
